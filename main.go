@@ -29,8 +29,11 @@ func main() {
 
 	if bump == "major" {
 		major++
+		minor = 0
+		patch = 0
 	} else if bump == "minor" {
 		minor++
+		patch = 0
 	} else if bump == "patch" {
 		patch++
 	}
