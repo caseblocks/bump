@@ -18,6 +18,10 @@ To modify a VERSION file:
 
     bump major > VERSION  # overwrites current file
 
+# Thanks
+
+Special thanks to https://github.com/giantswarm/semver-bump for the inspiration.
+
 # License
 
 MIT License
