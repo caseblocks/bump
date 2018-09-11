@@ -4,7 +4,7 @@ Increases a counter in VERSION files. Output is to STDOUT and the original VERSI
 
 # Usage
 
-Assuming a VERSION file containting `1.2.3.` in the current folder:
+Assuming a VERSION file containting `1.2.3`. in the current folder:
 
     bump major          # Output 2.0.0
 
@@ -17,6 +17,20 @@ Assuming a VERSION file containting `1.2.3.` in the current folder:
 To modify a VERSION file:
 
     bump major > VERSION  # overwrites current file
+
+# Building 'bump'
+
+Assuming you're using a Mac with [Go](https://golang.org/dl/) installed:
+
+To build a Windows binary run the following:
+
+    GOOS=windows GOARCH=amd64 go build -o bump.exe
+
+To build a Linux binary run the following:
+
+    GOOS=linux GOARCH=amd64 go build -o bump.linux
+
+For more options wrt to the `GOOS` & `GOARCH` envvars see https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63
 
 # Thanks
 
